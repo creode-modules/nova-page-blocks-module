@@ -1,0 +1,11 @@
+{
+    "name": "PageBlocks",
+    "alias": "pageblocks",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\PageBlocks\\app\\Providers\\PageBlocksServiceProvider"
+    ],
+    "files": []
+}

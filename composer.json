@@ -1,0 +1,41 @@
+{
+    "name": "creode/nova-page-blocks",
+    "description": "",
+    "authors": [
+        {
+            "name": "Creode",
+            "email": "contact@creode.co.uk"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://nova.laravel.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\PageBlocks\\app\\Providers\\PageBlocksServiceProvider"
+            ],
+            "aliases": {
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\PageBlocks\\": "",
+            "Modules\\PageBlocks\\App\\": "app/",
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+        }
+    },
+    "require": {
+        "laravel/nova": "^4.0",
+        "outl1ne/nova-translatable": "^2.2",
+        "whitecube/nova-flexible-content": "^1.0",
+        "creode/nova-media": "^1.0"
+    }
+}
