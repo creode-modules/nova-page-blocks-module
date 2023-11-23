@@ -21,9 +21,9 @@ class PageBlocksServiceProvider extends ServiceProvider
 
         $this->publishes(
             [
-                __DIR__.'/../../config/config.php' => config_path('pages.php'),
+                __DIR__.'/../../config/config.php' => config_path('page-blocks.php'),
             ],
-            'pages-config'
+            'page-blocks-config'
         );
     }
 
