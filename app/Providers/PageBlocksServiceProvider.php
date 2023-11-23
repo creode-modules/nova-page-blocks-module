@@ -16,7 +16,7 @@ class PageBlocksServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        $this->loadViewsFrom(__DIR__.'/../../resources/views', 'pageblocks');
+        $this->loadViewsFrom(__DIR__.'/../../resources/views', 'page-blocks');
         $this->registerPageBlocks();
 
         $this->publishes(
@@ -29,7 +29,7 @@ class PageBlocksServiceProvider extends ServiceProvider
 
     public function register(): void
     {
-        $this->mergeConfigFrom(__DIR__.'/../../config/config.php', 'pageblocks');
+        $this->mergeConfigFrom(__DIR__.'/../../config/config.php', 'page-blocks');
     }
 
     protected function registerPageBlocks()

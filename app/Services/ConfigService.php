@@ -7,7 +7,7 @@ class ConfigService
 
     public static function getBlockFormatOptions(string $blockName)
     {
-        $options = explode(',', config('pageblocks.' . $blockName . '_formats'));
+        $options = explode(',', config('page-blocks.' . $blockName . '_formats'));
     
         $options = array_combine(range(1, count($options)), $options);
 

@@ -14,7 +14,7 @@ class BannerBlock extends PageBlockAbstract
 
     protected $label = 'Banner';
     protected $name = 'banner';
-    protected $view = 'pageblocks::banner';
+    protected $view = 'page-blocks::banner';
 
     protected function fields()
     {
