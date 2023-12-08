@@ -29,6 +29,8 @@ class BannerBlock extends PageBlockAbstract
             MediaField::make('Media')
                 ->nullable(),
             FlexibleField::make('Content')
+                ->fullWidth()
+                ->collapsed()
                 ->button('Add Content')
                 ->addLayout(
                     'Heading 1',
