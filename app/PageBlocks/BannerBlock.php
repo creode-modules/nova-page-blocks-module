@@ -2,16 +2,15 @@
 
 namespace Modules\PageBlocks\app\PageBlocks;
 
-use Modules\Pages\app\Abstracts\PageBlockAbstract;
-use Modules\PageBlocks\app\Services\ConfigService;
+use Laravel\Nova\Fields\Text as TextField;
 use Laravel\Nova\Fields\Select as SelectField;
 use Modules\NovaMedia\app\Nova\Fields\MediaField;
+use Modules\PageBlocks\app\Services\ConfigService;
+use Creode\NovaPageBuilder\Abstracts\PageBlockAbstract;
 use Whitecube\NovaFlexibleContent\Flexible as FlexibleField;
-use Laravel\Nova\Fields\Text as TextField;
 
 class BannerBlock extends PageBlockAbstract
 {
-
     protected $label = 'Banner';
     protected $name = 'banner';
     protected $view = 'page-blocks::banner';
