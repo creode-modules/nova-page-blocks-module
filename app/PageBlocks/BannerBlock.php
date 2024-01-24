@@ -20,7 +20,7 @@ class BannerBlock extends PageBlockAbstract
         return [
             SelectField::make('Format')
                 ->options(
-                    function() {
+                    function () {
                         return ConfigService::getBlockFormatOptions($this->name);
                     }
                 )
@@ -82,5 +82,4 @@ class BannerBlock extends PageBlockAbstract
                 ),
         ];
     }
-
 }
