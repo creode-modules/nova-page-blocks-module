@@ -11,25 +11,25 @@
                     @if(!$contentItem['attributes']['text'])
                         @break
                     @endif
-                    <bannerheading1>
+                    <banner-heading1>
                         {{ $contentItem['attributes']['text'][app()->currentLocale()] }}
-                    </bannerheading1>
+                    </banner-heading1>
                 @break
                 @case('heading_2')
                     @if(!$contentItem['attributes']['text'])
                         @break
                     @endif
-                    <bannerheading2>
+                    <banner-heading2>
                         {{ $contentItem['attributes']['text'][app()->currentLocale()] }}
-                    </bannerheading2>
+                    </banner-heading2>
                 @break
                 @case('text')
                     @if(!$contentItem['attributes']['text'])
                         @break
                     @endif
-                    <bannertext>
+                    <banner-text>
                         {{ $contentItem['attributes']['text'][app()->currentLocale()] }}
-                    </bannertext>
+                    </banner-text>
                 @break
                 @case('link')
                     @if(!$contentItem['attributes']['text'])
@@ -44,13 +44,13 @@
                     @if(!$contentItem['attributes']['target'])
                         @break
                     @endif
-                    <bannercta
+                    <banner-cta
                         href="{{ $contentItem['attributes']['href'][app()->currentLocale()] }}"
                         title="{{ $contentItem['attributes']['title'][app()->currentLocale()] }}"
                         target="{{ $contentItem['attributes']['target'] }}"
                     >
                         {{ $contentItem['attributes']['text'][app()->currentLocale()] }}
-                    </bannercta>
+                    </banner-cta>
                 @break
             @endswitch
         @endforeach
