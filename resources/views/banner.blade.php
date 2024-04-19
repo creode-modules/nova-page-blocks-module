@@ -1,4 +1,4 @@
-<banner :format="{{ $format }}">
+<banner :format="{{ $format }}" v-cloak>
     @if($media)
         <template v-slot:media>
             @include('nova-media::media', [ 'id' => $media ])
